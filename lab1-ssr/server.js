@@ -9,8 +9,7 @@ const posts = Array.from({ length: 10 }, (_, i) => ({
 }));
 
 app.get("/", (req, res) => {
-  const now = new Date().toLocaleString("zh-CN");
-
+  const now = new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" });
   const html = `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
