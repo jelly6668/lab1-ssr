@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3000;
+
 
 const posts = Array.from({ length: 10 }, (_, i) => ({
   id: i + 1,
